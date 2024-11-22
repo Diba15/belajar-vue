@@ -17,7 +17,7 @@ import { RouterLink } from 'vue-router'
       to="/About"
       id="aboutNav"
       class="cursor-pointer py-3 px-10 rounded-3xl transition-all duration-300 ease-in-out translate-x-0 hover:translate-x-4 hover:bg-green-600 md:pe-10 md:ps-16"
-      ><i class="pi pi-user"></i> About
+      ><i class="pi pi-user"></i> Profile
     </RouterLink>
     <RouterLink
       to="/Work"

@@ -1,16 +1,34 @@
 <script setup>
-import MainButton from '@/components/Button.vue'
-
 defineOptions({
   name: 'AboutMe',
 })
 </script>
 
 <template>
-  <div class="py-5 flex flex-col min-h-screen gap-5 max-w-screen-md mx-auto px-5 dark:text-white">
-    <h1 class="font-bold text-center text-3xl">About</h1>
-    <MainButton button-name="Hello" />
+  <div
+    class="flex flex-col-reverse md:flex-row flex-shrink min-h-screen gap-10 md:gap-48 max-w-screen-2xl mx-auto items-center md:items-stretch justify-center dark:text-white"
+  >
+    <div class="max-h-fit">
+      <h1 class="font-bold text-3xl">Dimas Bagas Saputro</h1>
+      <h3 class="font-bold text-2xl text-green-600">Frontend Developer</h3>
+      <p class="mt-5 max-w-72">
+        Greetings, my name is <span class="text-green-600">Dimas Bagas Saputro</span>, and I hold a Bachelor’s degree in Informatics
+        Engineering from Telkom University. I possess a keen interest and am presently dedicating my
+        efforts towards the domains of <span class="text-green-600">Frontend Web Development</span> and <span class="text-green-600">Backend Web Development</span>.
+      </p>
+    </div>
+    <div class="max-h-fit">
+      <img src="@/assets/Dimas.png" alt="Illustration Coffee" class="img" />
+    </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.img {
+  width: 300px;
+  height: 300px;
+  object-position: bottom;
+  border-radius: 50%;
+  object-fit: cover;
+}
+</style>
