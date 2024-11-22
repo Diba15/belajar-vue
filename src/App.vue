@@ -5,7 +5,7 @@ import BottomNavigation from '@/components/BottomNavigation.vue'
 </script>
 
 <template>
-  <div class="bg-[#212124] scroll-smooth">
+  <div class="scroll-smooth">
     <custom-navbar class="sticky top-0" />
     <AppMenus
       class="sticky hidden md:flex top-0 max-w-fit md:w-full mx-auto text-white font-bold md:mx-0 md:-ms-10 md:top-1/3"

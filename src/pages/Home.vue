@@ -9,11 +9,11 @@ defineOptions({
 <template>
   <section
     id="home"
-    class="py-5 flex flex-col min-h-screen gap-5 max-w-full mx-auto px-5 text-white"
+    class="py-5 flex flex-col min-h-fit gap-5 max-w-full mx-auto px-5 text-white"
   >
     <div class="max-w-screen-md mx-auto">
       <v-typical
-        class="blink text-center text-5xl font-bold border-y rounded-xl py-5 neue"
+        class="blink text-center text-2xl md:text-5xl font-bold border-y rounded-xl py-5 neue"
         :steps="[
           'I am',
           1000,

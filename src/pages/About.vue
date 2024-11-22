@@ -6,7 +6,7 @@ defineOptions({
 
 <template>
   <div
-    class="flex flex-col-reverse md:flex-row flex-shrink min-h-screen gap-10 md:gap-48 max-w-screen-2xl mx-auto items-center md:items-stretch justify-center dark:text-white"
+    class="flex flex-col-reverse md:flex-row min-h-fit gap-10 md:gap-48 max-w-screen-2xl mx-auto items-center md:items-start justify-center dark:text-white"
   >
     <div class="max-h-fit">
       <h1 class="font-bold text-3xl">Dimas Bagas Saputro</h1>
