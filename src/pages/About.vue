@@ -7,7 +7,7 @@ defineOptions({
 </script>
 
 <template>
-  <div class="py-5 flex flex-col gap-5 max-w-screen-md mx-auto px-5">
+  <div class="py-5 flex flex-col min-h-screen gap-5 max-w-screen-md mx-auto px-5 dark:text-white">
     <h1 class="font-bold text-center text-3xl">About</h1>
     <MainButton button-name="Hello" />
   </div>

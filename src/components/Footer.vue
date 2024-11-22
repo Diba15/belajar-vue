@@ -2,23 +2,20 @@
 defineOptions({
   name: 'customFooter',
 })
-
-const scrollTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  })
-}
-
 </script>
 
 <template>
-  <div @click="scrollTop"
-    class="rounded-full z-50 bg-[#212124] border-2 text-center w-fit p-2 scale-110 cursor-pointer mx-auto -mb-5"
-  >
-    <i class="pi pi-arrow-up text-xl text-white"></i>
+  <div class="relative bottom-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#16a34a"
+        fill-opacity="1"
+        d="M0,128L48,138.7C96,149,192,171,288,170.7C384,171,480,149,576,149.3C672,149,768,171,864,170.7C960,171,1056,149,1152,133.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
   </div>
-  <footer class="border-t-[0.5px] flex p-5 text-white align-middle justify-end">
+  <footer class="bg-green-600 border-0 flex p-5 text-white align-middle justify-between">
+    <h1 class="font-bold text-center neue">&copy; Copyright 2024</h1>
     <div class="flex flex-row gap-5">
       <i
         class="pi pi-instagram text-2xl transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
