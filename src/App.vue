@@ -1,16 +1,16 @@
 <script setup>
 import AppMenus from '@/components/AppMenus.vue'
-import {RouterView} from 'vue-router'
+import { RouterView } from 'vue-router'
 import BottomNavigation from '@/components/BottomNavigation.vue'
 </script>
 
 <template>
+  <custom-navbar class="sticky top-0" />
+  <AppMenus
+    class="fixed hidden md:flex top-0 max-w-fit md:w-full mx-auto text-white font-bold md:mx-0 md:-ms-10 md:top-1/3"
+  />
   <div class="scroll-smooth">
-    <custom-navbar class="sticky top-0" />
-    <AppMenus
-      class="sticky hidden md:flex top-0 max-w-fit md:w-full mx-auto text-white font-bold md:mx-0 md:-ms-10 md:top-1/3"
-    />
-    <RouterView class="animate-showFromTop" />
+    <RouterView class="animate-showFromTop px-5" />
     <BottomNavigation class="flex md:hidden" />
   </div>
 </template>
