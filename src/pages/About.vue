@@ -58,12 +58,12 @@ const education = [
       <h1></h1>
     </div>
     <div
-      class="flex flex-col md:flex-row gap-3 md:gap-10 items-center justify-between w-full"
+      class="flex flex-col md:flex-row gap-3 md:gap-10 items-center justify-between w-fit mx-10 md:mx-0"
       v-for="work in workExperience"
       v-bind:key="work.title - work.company"
     >
       <div class="flex flex-row gap-5">
-        <img class="rounded-full w-20 h-20" src="@/assets/logo.svg" alt="" />
+        <img class="w-20 h-20" src="@/assets/logo.svg" alt="" />
         <div class="grow">
           <span class="font-bold text-md">{{ work.company }}</span> <br />
           <span class="font-semibold text-sm">{{ work.title }}</span>
