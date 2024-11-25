@@ -12,7 +12,7 @@ const workExperience = [
   {
     title: 'Technical Writer',
     company: 'BPH MIGAS',
-    duration: 'Oktober 2021 - Oktober 2022',
+    duration: 'Oktober 2021 - May 2022',
   },
 ]
 
@@ -51,25 +51,25 @@ const education = [
   </div>
 
   <div
-    class="animate-showFromTop flex flex-col min-h-fit my-20 gap-10 max-w-screen-md mx-auto items-center md:items-start justify-center text-white"
+    class="animate-showFromTop flex flex-col min-h-fit my-20 gap-10 max-w-screen-md mx-auto items-center md:items-start justify-center align-middle text-white"
   >
     <div class="">
       <h1 class="font-bold text-3xl">Work Experience</h1>
       <h1></h1>
     </div>
     <div
-      class="flex flex-row gap-10 justify-between w-full"
+      class="flex flex-col md:flex-row gap-3 md:gap-10 items-center justify-between w-full"
       v-for="work in workExperience"
       v-bind:key="work.title - work.company"
     >
-      <div>
+      <div class="flex flex-row gap-5">
         <img class="rounded-full w-20 h-20" src="@/assets/logo.svg" alt="" />
+        <div class="grow">
+          <span class="font-bold text-md">{{ work.company }}</span> <br />
+          <span class="font-semibold text-sm">{{ work.title }}</span>
+          <h6 class="text-gray-300">{{ work.duration }}</h6>
+        </div>
       </div>
-      <div class="grow">
-        <span class="font-bold text-md">{{ work.company }}</span> <br />
-        <span class="font-semibold text-sm">{{ work.title }}</span>
-      </div>
-      <h6 class="text-gray-300">{{ work.duration }}</h6>
     </div>
   </div>
 
@@ -81,18 +81,18 @@ const education = [
       <h1></h1>
     </div>
     <div
-      class="flex flex-row gap-10 justify-between w-full mx-10 md:mx-0"
+      class="flex flex-col md:flex-row gap-3 md:gap-10 justify-between items-center w-full mx-10 md:mx-0"
       v-for="edu in education"
       v-bind:key="edu.title - edu.company"
     >
-      <div>
+      <div class="flex flex-row gap-5">
         <img class="w-20 h-20" src="@/assets/tel_u_logo.png" alt="" />
+        <div class="grow">
+          <span class="font-bold text-md">{{ edu.company }}</span> <br />
+          <span class="font-semibold text-sm">{{ edu.title }}</span>
+          <h6 class="text-gray-300 items-start">{{ edu.duration }}</h6>
+        </div>
       </div>
-      <div class="grow">
-        <span class="font-bold text-md">{{ edu.company }}</span> <br />
-        <span class="font-semibold text-sm">{{ edu.title }}</span>
-      </div>
-      <h6 class="text-gray-300">{{ edu.duration }}</h6>
     </div>
   </div>
 </template>
