@@ -2,19 +2,19 @@
 import AppMenus from '@/components/AppMenus.vue'
 import { RouterView } from 'vue-router'
 import BottomNavigation from '@/components/BottomNavigation.vue'
-import { Analytics } from '@vercel/analytics/vue';
+// import { Analytics } from '@vercel/analytics/vue';
 </script>
 
 <template>
-  <Analytics />
+<!--  <Analytics />-->
   <custom-navbar class="sticky top-0" />
   <AppMenus
     class="fixed hidden md:flex top-0 max-w-fit md:w-full mx-auto text-white font-bold md:mx-0 md:-ms-10 md:top-1/3"
   />
-  <div class="scroll-smooth">
-    <RouterView class="animate-showFromTop px-5" />
-    <BottomNavigation class="flex md:hidden" />
+  <div class="scroll-smooth animate-showFromTop px-5">
+    <RouterView />
   </div>
+  <BottomNavigation class="flex md:hidden" />
 </template>
 
 <style scoped>
