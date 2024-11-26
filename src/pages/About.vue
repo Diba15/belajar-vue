@@ -1,7 +1,7 @@
 <script setup>
 import StudentService from '@/services/model/Student.js'
 import WorkService from '@/services/model/Work.js'
-import {ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
 defineOptions({
   name: 'AboutMe',
@@ -9,7 +9,7 @@ defineOptions({
 
 const workExperience = ref([])
 
-onMounted( async() => {
+onMounted(async () => {
   try {
     const response = await WorkService.getAll()
     workExperience.value = response.data[0]
@@ -32,7 +32,6 @@ onMounted(async () => {
 })
 
 console.log(education)
-
 </script>
 
 <template>
@@ -73,6 +72,15 @@ console.log(education)
           <span class="font-bold text-md">{{ work.company }}</span> <br />
           <span class="font-semibold text-sm">{{ work.title }}</span>
           <h6 class="text-gray-300">{{ work.duration }}</h6>
+          <div class="flex flex-wrap gap-2">
+            <div
+              v-for="skill in work.skills"
+              v-bind:key="skill"
+              class="bg-gray-800 rounded-full px-3 py-1 text-xs font-semibold"
+            >
+              {{ skill }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -96,6 +104,15 @@ console.log(education)
           <span class="font-bold text-md">{{ edu.company }}</span> <br />
           <span class="font-semibold text-sm">{{ edu.title }}</span>
           <h6 class="text-gray-300 items-start">{{ edu.duration }}</h6>
+          <div class="flex flex-wrap gap-2">
+            <div
+              v-for="subject in edu.subjects"
+              v-bind:key="subject"
+              class="bg-gray-800 rounded-full px-3 py-1 text-xs font-semibold"
+            >
+              {{ subject }}
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,9 @@
 <script setup>
 import { VTypical } from 'vue-typical'
 import vue from '../assets/Icon/vue.png'
-import react from '../assets/Icon/react.png'
 import tailwind from '../assets/Icon/tailwind.svg'
-import bootstrap from '../assets/Icon/bootstrap.png'
-import next from '../assets/Icon/next.png'
+import mongodb from '../assets/Icon/mongodb.png'
+import express from '../assets/Icon/express-js.png'
 
 defineOptions({
   name: 'HomeMe',
@@ -16,20 +15,16 @@ const skills = [
     icon: vue,
   },
   {
-    name: 'React',
-    icon: react,
+    name: 'Express',
+    icon: express,
   },
   {
-    name: 'Next',
-    icon: next,
+    name: 'MongoDB',
+    icon: mongodb,
   },
   {
     name: 'Tailwind',
     icon: tailwind,
-  },
-  {
-    name: 'Bootstrap',
-    icon: bootstrap,
   }
 ]
 </script>
@@ -76,7 +71,8 @@ const skills = [
       </h5>
     </div>
 
-    <div class="max-w-screen-md mx-auto mt-10">
+    <div class="max-w-screen-md mx-auto mt-6">
+      <h1 class="text-2xl font-semibold text-center mb-4">Created with Love &#10084;</h1>
       <div class="relative inline-flex items-center gap-8 px-12">
         <!-- Left bracket -->
 <!--        <div class="absolute left-0 top-0 bottom-0 flex flex-col items-start">-->
