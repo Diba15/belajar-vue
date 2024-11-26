@@ -94,7 +94,7 @@ console.log(education)
       <h1></h1>
     </div>
     <div
-      class="flex flex-col md:flex-row gap-3 md:gap-10 justify-between items-center w-full mx-10 md:mx-0"
+      class="flex flex-col md:flex-row gap-3 md:gap-10 justify-between items-center mx-10 md:mx-0"
       v-for="edu in education"
       v-bind:key="edu._id"
     >
