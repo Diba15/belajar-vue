@@ -70,7 +70,7 @@ console.log(education)
         <img class="w-20 h-20" src="@/assets/logo.svg" alt="" />
         <div class="grow">
           <span class="font-bold text-md">{{ work.company }}</span> <br />
-          <span class="font-semibold text-sm">{{ work.title }}</span>
+          <span class="font-semibold text-sm text-green-600">{{ work.title }}</span>
           <h6 class="text-gray-300">{{ work.duration }}</h6>
           <div class="flex flex-wrap gap-2">
             <div
@@ -102,7 +102,7 @@ console.log(education)
         <img class="w-20 h-20" src="@/assets/tel_u_logo.png" alt="" />
         <div class="grow">
           <span class="font-bold text-md">{{ edu.company }}</span> <br />
-          <span class="font-semibold text-sm">{{ edu.title }}</span>
+          <span class="font-semibold text-sm text-green-600">{{ edu.title }}</span>
           <h6 class="text-gray-300 items-start">{{ edu.duration }}</h6>
           <div class="flex flex-wrap gap-2">
             <div

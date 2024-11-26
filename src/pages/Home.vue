@@ -86,7 +86,7 @@ const skills = [
           <div
             v-for="skill in skills"
             :key="skill.name"
-            class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:scale-[1.2] transition-all duration-300 neumorphishm"
+            class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:scale-[1.2] transition-all duration-300"
           >
             <img :src="skill.icon" alt="" class="h-14 w-14" />
           </div>
@@ -108,22 +108,6 @@ const skills = [
 
 .neue {
   font-family: 'Bebas Neue', cursive;
-}
-
-.neumorphishm {
-  border-radius: 50px;
-  padding:15px;
-  background: linear-gradient(145deg, #1e1e20, #232327);
-  box-shadow:  24px 24px 47px #1e1e21,
-  -24px -24px 47px #242427;
-}
-
-.neumorphishm:hover {
-  border-radius: 50px;
-  padding: 15px;
-  background: #212124;
-  box-shadow:  16px 16px 32px #1e1e21,
-  -16px -16px 32px #242427;
 }
 
 .blink::after {
