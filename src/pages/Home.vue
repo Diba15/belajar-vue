@@ -66,40 +66,42 @@ const skills = [
       </div>
       <h5 class="text-center neue text-xl">
         I have a passion for creating
-        <span class="font-bold text-green-600">beautiful and functional</span> websites. I am also
+        <span class="font-bold text-green-600 hover:text-3xl transition-all duration-300">beautiful and functional</span> websites.
+        <br> I am also
         interested in learning new
-        <span class="font-bold text-green-600">technologies and frameworks</span>. I am always
+        <span class="font-bold text-green-600 hover:text-3xl transition-all duration-300">technologies and frameworks</span>.
+        <br> I am always
         looking for new challenges and opportunities to
-        <span class="font-bold text-green-600">learn and grow</span>.
+        <span class="font-bold text-green-600 hover:text-3xl transition-all duration-300">learn and grow</span>.
       </h5>
     </div>
 
     <div class="max-w-screen-md mx-auto mt-10">
       <div class="relative inline-flex items-center gap-8 px-12">
         <!-- Left bracket -->
-        <div class="absolute left-0 top-0 bottom-0 flex flex-col items-start">
-          <div class="w-5 h-[2px] bg-white"></div>
-          <div class="w-[2px] h-full bg-white"></div>
-          <div class="w-5 h-[2px] bg-white"></div>
-        </div>
+<!--        <div class="absolute left-0 top-0 bottom-0 flex flex-col items-start">-->
+<!--          <div class="w-5 h-[2px] bg-white"></div>-->
+<!--          <div class="w-[2px] h-full bg-white"></div>-->
+<!--          <div class="w-5 h-[2px] bg-white"></div>-->
+<!--        </div>-->
 
         <!-- Programming languages/frameworks -->
         <div class="flex flex-wrap justify-center gap-10">
           <div
             v-for="skill in skills"
             :key="skill.name"
-            class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:scale-[1.2] transition-all duration-300"
+            class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:scale-[1.2] transition-all duration-300 neumorphishm"
           >
             <img :src="skill.icon" alt="" class="h-14 w-14" />
           </div>
         </div>
 
         <!-- Right bracket -->
-        <div class="absolute right-0 top-0 bottom-0 flex flex-col items-end">
-          <div class="w-5 h-[2px] bg-white"></div>
-          <div class="w-[2px] h-full bg-white"></div>
-          <div class="w-5 h-[2px] bg-white"></div>
-        </div>
+<!--        <div class="absolute right-0 top-0 bottom-0 flex flex-col items-end">-->
+<!--          <div class="w-5 h-[2px] bg-white"></div>-->
+<!--          <div class="w-[2px] h-full bg-white"></div>-->
+<!--          <div class="w-5 h-[2px] bg-white"></div>-->
+<!--        </div>-->
       </div>
     </div>
   </section>
@@ -110,6 +112,22 @@ const skills = [
 
 .neue {
   font-family: 'Bebas Neue', cursive;
+}
+
+.neumorphishm {
+  border-radius: 50px;
+  padding:15px;
+  background: linear-gradient(145deg, #1e1e20, #232327);
+  box-shadow:  24px 24px 47px #1e1e21,
+  -24px -24px 47px #242427;
+}
+
+.neumorphishm:hover {
+  border-radius: 50px;
+  padding: 15px;
+  background: #212124;
+  box-shadow:  16px 16px 32px #1e1e21,
+  -16px -16px 32px #242427;
 }
 
 .blink::after {

@@ -2,6 +2,21 @@
 import AppMenus from '@/components/AppMenus.vue'
 import { RouterView } from 'vue-router'
 import BottomNavigation from '@/components/BottomNavigation.vue'
+import WorkService from '@/services/model/Work.js'
+
+import { onMounted } from 'vue'
+
+const workExperience = []
+
+onMounted(() => {
+  WorkService.getAll()
+    .then((response) => {
+      workExperience.push(response.data)
+    })
+    .catch((error) => {
+      console.error('Error fetching work experience:', error)
+    })
+})
 </script>
 
 <template>
