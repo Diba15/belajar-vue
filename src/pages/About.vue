@@ -1,33 +1,38 @@
 <script setup>
+import StudentService from '@/services/model/Student.js'
+import WorkService from '@/services/model/Work.js'
+import {ref, onMounted } from 'vue'
+
 defineOptions({
   name: 'AboutMe',
 })
 
-const workExperience = [
-  {
-    title: 'Frontend Developer',
-    company: 'SIMBARRAYA',
-    duration: 'Oktober 2023 - February 2024',
-  },
-  {
-    title: 'Technical Writer',
-    company: 'BPH MIGAS',
-    duration: 'Oktober 2021 - May 2022',
-  },
-]
+const workExperience = ref([])
 
-const education = [
-  {
-    title: 'Bachelor of Informatics Engineering',
-    company: 'Telkom University',
-    duration: '2022 - 2024',
-  },
-  {
-    title: 'Diploma of Informatics Engineering',
-    company: 'Telkom University',
-    duration: '2019 - 2022',
-  },
-]
+onMounted( async() => {
+  try {
+    const response = await WorkService.getAll()
+    workExperience.value = response.data[0]
+    workExperience.value = response.data.flat()
+  } catch (error) {
+    console.error('Error fetching work experience:', error)
+  }
+})
+
+const education = ref([])
+
+onMounted(async () => {
+  try {
+    const response = await StudentService.getAll()
+    education.value = response.data[0]
+    education.value = response.data.flat()
+  } catch (error) {
+    console.error('Error fetching education:', error)
+  }
+})
+
+console.log(education)
+
 </script>
 
 <template>
@@ -60,7 +65,7 @@ const education = [
     <div
       class="flex flex-col md:flex-row gap-3 md:gap-10 items-center justify-between w-fit mx-10 md:mx-0"
       v-for="work in workExperience"
-      v-bind:key="work.title - work.company"
+      v-bind:key="work._id"
     >
       <div class="flex flex-row gap-5">
         <img class="w-20 h-20" src="@/assets/logo.svg" alt="" />
@@ -83,7 +88,7 @@ const education = [
     <div
       class="flex flex-col md:flex-row gap-3 md:gap-10 justify-between items-center w-full mx-10 md:mx-0"
       v-for="edu in education"
-      v-bind:key="edu.title - edu.company"
+      v-bind:key="edu._id"
     >
       <div class="flex flex-row gap-5">
         <img class="w-20 h-20" src="@/assets/tel_u_logo.png" alt="" />
