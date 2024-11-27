@@ -57,7 +57,7 @@ onMounted(async () => {
     class="animate-showFromTop flex flex-col min-h-fit my-20 gap-10 max-w-screen-md mx-auto items-center md:items-start justify-center align-middle text-white"
   >
     <div class="">
-      <h1 class="font-bold text-3xl">Work Experience</h1>
+      <h1 class="font-bold text-2xl md:text-3xl flex flex-row gap-5"><i class="pi pi-briefcase"></i> Work Experience</h1>
       <h1></h1>
     </div>
     <div
@@ -89,7 +89,7 @@ onMounted(async () => {
     class="animate-showFromTop flex flex-col min-h-fit gap-10 mb-20 max-w-screen-md mx-auto items-center md:items-start justify-center text-white"
   >
     <div class="">
-      <h1 class="font-bold text-3xl">Education</h1>
+      <h1 class="font-bold text-2xl md:text-3xl flex flex-row gap-5"><i class="pi pi-graduation-cap"></i> Education</h1>
       <h1></h1>
     </div>
     <div

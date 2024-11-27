@@ -7,7 +7,7 @@ defineOptions({
 </script>
 
 <template>
-  <nav class="bg-transparent flex p-5 text-white align-middle justify-between">
+  <nav class="bg-transparent flex p-5 text-white align-middle justify-between px-5">
     <MainIcon
       class="border animateIcon border-white p-5 transition-all duration-300 ease-in-out hover:scale-110"
     />
