@@ -11,7 +11,7 @@ defineOptions({
     <MainIcon
       class="border animateIcon border-white p-5 transition-all duration-300 ease-in-out hover:scale-110"
     />
-    <ul class="hidden md:flex flex-row gap-5 text-lg">
+    <ul class="hidden md:flex flex-row gap-5 text-lg items-center">
       <li>
         <RouterLink
           class="py-2 px-8 hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
@@ -34,7 +34,7 @@ defineOptions({
         </RouterLink>
       </li>
     </ul>
-    <div class="flex flex-row gap-5">
+    <div class="flex flex-row gap-5 items-center">
       <a
         href="https://www.instagram.com/dimazzbagazz/"
         target="_blank"

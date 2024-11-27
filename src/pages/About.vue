@@ -39,6 +39,7 @@ onMounted(async () => {
     <div class="max-h-fit">
       <h1 class="font-bold text-3xl">Dimas Bagas Saputro</h1>
       <h3 class="font-bold text-2xl text-green-600">Frontend Developer</h3>
+      <a href="mailto:dimaabagas73@gmail.com" class="text-gray-300 hover:underline">dimaabagas73@gmail.com</a>
       <p class="mt-5 max-w-72">
         Greetings, my name is <span class="text-green-600">Dimas Bagas Saputro</span>, and I hold a
         Bachelor’s degree in Informatics Engineering from Telkom University. I possess a keen
