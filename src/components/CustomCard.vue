@@ -1,10 +1,10 @@
 <script setup>
-
 defineProps({
   title: String,
   description: String,
   image: String,
   link: String,
+  githubLink: String,
   subjects: Array,
 })
 </script>
@@ -27,6 +27,24 @@ defineProps({
           >
             {{ subject }}
           </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-center md:justify-start gap-2">
+          <a
+            :href="link"
+            target="_blank"
+            class="px-5 py-2 bg-green-600 rounded-lg text-md text-white font-semibold hover:bg-green-700 transition-all duration-300 ease-in-out"
+          >
+            <i class="pi pi-globe"></i> Website
+          </a>
+          <a
+            :href="githubLink"
+            target="_blank"
+            class="px-5 py-2 bg-gray-800 rounded-lg text-md text-white font-semibold hover:bg-gray-900 transition-all duration-300 ease-in-out"
+          >
+            <i class="pi pi-github"></i> Github
+          </a>
         </div>
       </div>
     </div>
