@@ -57,8 +57,8 @@ onMounted(async () => {
   >
     <div class="">
       <h1 class="font-bold text-3xl">Work Experience</h1>
+      <h1></h1>
     </div>
-    <hr>
     <div
       class="flex flex-col md:flex-row gap-3 md:gap-10 items-center justify-between w-fit mx-10 md:mx-0"
       v-for="work in workExperience"
