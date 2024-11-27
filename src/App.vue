@@ -1,5 +1,4 @@
 <script setup>
-import AppMenus from '@/components/AppMenus.vue'
 import { RouterView } from 'vue-router'
 import BottomNavigation from '@/components/BottomNavigation.vue'
 // import { Analytics } from '@vercel/analytics/vue';
@@ -8,9 +7,6 @@ import BottomNavigation from '@/components/BottomNavigation.vue'
 <template>
 <!--  <Analytics />-->
   <custom-navbar class="sticky top-0" />
-  <AppMenus
-    class="fixed hidden md:flex top-0 max-w-fit md:w-full mx-auto text-white font-bold md:mx-0 md:-ms-10 md:top-1/3"
-  />
   <div class="scroll-smooth animate-showFromTop px-5">
     <RouterView />
   </div>

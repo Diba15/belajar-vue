@@ -9,20 +9,67 @@ defineOptions({
 <template>
   <nav class="bg-transparent flex p-5 text-white align-middle justify-between">
     <MainIcon
-      class="border border-white p-5 transition-all duration-300 ease-in-out hover:scale-110"
+      class="border animateIcon border-white p-5 transition-all duration-300 ease-in-out hover:scale-110"
     />
+    <ul class="hidden md:flex flex-row gap-5 text-lg">
+      <li>
+        <RouterLink
+          class="py-2 px-8 hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
+          to="/"
+          ><i class="pi pi-home"></i> Home
+        </RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          class="py-2 px-8 hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
+          to="/About"
+          ><i class="pi pi-user"></i> Profile
+        </RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          class="py-2 px-8 hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
+          to="/Work"
+          ><i class="pi pi-briefcase"></i> Work
+        </RouterLink>
+      </li>
+    </ul>
     <div class="flex flex-row gap-5">
-      <a href="https://www.instagram.com/dimazzbagazz/" target="_blank"
+      <a
+        href="https://www.instagram.com/dimazzbagazz/"
+        target="_blank"
         class="pi pi-instagram text-2xl transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
       ></a>
-      <a href="https://github.com/Diba15" target="_blank"
+      <a
+        href="https://github.com/Diba15"
+        target="_blank"
         class="pi pi-github text-2xl transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
       ></a>
-      <a href="https://www.linkedin.com/in/dimas-bagas-saputro-b2185373/" target="_blank"
+      <a
+        href="https://www.linkedin.com/in/dimas-bagas-saputro-b2185373/"
+        target="_blank"
         class="pi pi-linkedin text-2xl transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
       ></a>
     </div>
   </nav>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+.animateIcon:hover {
+  animation: animateIcon 2s linear infinite;
+}
+
+@keyframes animateIcon {
+  0% {
+    left: 0;
+  }
+  50% {
+    background-color: #16a34a;
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+</style>
