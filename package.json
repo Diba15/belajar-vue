@@ -13,6 +13,7 @@
   "dependencies": {
     "@primevue/themes": "^4.2.2",
     "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
     "axios": "^1.7.8",
     "primeicons": "^7.0.0",
     "primevue": "^4.2.2",
