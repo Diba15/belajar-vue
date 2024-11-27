@@ -39,16 +39,28 @@ defineOptions({
         href="https://www.instagram.com/dimazzbagazz/"
         target="_blank"
         class="pi pi-instagram text-2xl transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
+        aria-label="Instagram"
+        aria-hidden="false"
+        role="img"
+        aria-labelledby="instagram"
       ></a>
       <a
         href="https://github.com/Diba15"
         target="_blank"
         class="pi pi-github text-2xl transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
+        aria-label="Github"
+        aria-hidden="false"
+        role="img"
+        aria-labelledby="github"
       ></a>
       <a
         href="https://www.linkedin.com/in/dimas-bagas-saputro-b2185373/"
         target="_blank"
         class="pi pi-linkedin text-2xl transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
+        aria-label="Linkedin"
+        aria-hidden="false"
+        role="img"
+        aria-labelledby="linkedin"
       ></a>
     </div>
   </nav>

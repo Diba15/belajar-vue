@@ -7,9 +7,9 @@ import BottomNavigation from '@/components/BottomNavigation.vue'
 <template>
 <!--  <Analytics />-->
   <custom-navbar class="sticky top-0" />
-  <div class="scroll-smooth animate-showFromTop px-5">
+  <main class="scroll-smooth animate-showFromTop px-5" role="main">
     <RouterView />
-  </div>
+  </main>
   <BottomNavigation class="flex md:hidden" />
 </template>
 
