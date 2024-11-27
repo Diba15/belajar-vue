@@ -1,4 +1,5 @@
 <script setup>
+
 defineProps({
   title: String,
   description: String,
@@ -30,8 +31,8 @@ defineProps({
       </div>
     </div>
     <img
-      :src="`/src/assets/${image}`"
-      alt="Petani Pintar"
+      :src="image"
+      :alt="title"
       class="min-w-[50%] shadow-lg shadow-green-800 md:w-1/2 hover:scale-110 transition-all duration-300 ease-in-out"
     />
   </div>
