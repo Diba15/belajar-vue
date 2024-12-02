@@ -18,7 +18,7 @@ defineProps({
         <a v-bind:href="`${link}`" target="_blank" class="font-bold text-3xl text-green-600">{{
           title
         }}</a>
-        <h1 class="font-semibold text-md">{{ description }}</h1>
+        <h1 class="font-semibold text-md text-gray-300 max-w-lg">{{ description }}</h1>
         <div class="flex flex-wrap gap-2 my-2 justify-center md:justify-start">
           <div
             v-for="subject in subjects"
