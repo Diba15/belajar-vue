@@ -83,12 +83,6 @@ const skills = [
     <div class="max-w-screen-md mx-auto mt-6">
       <h1 class="text-2xl font-semibold raleway text-center mb-4">Created with Love <span class="text-red-600">&#10084;</span> </h1>
       <div class="relative inline-flex items-center gap-8 px-12">
-        <!-- Left bracket -->
-        <!--        <div class="absolute left-0 top-0 bottom-0 flex flex-col items-start">-->
-        <!--          <div class="w-5 h-[2px] bg-white"></div>-->
-        <!--          <div class="w-[2px] h-full bg-white"></div>-->
-        <!--          <div class="w-5 h-[2px] bg-white"></div>-->
-        <!--        </div>-->
 
         <!-- Programming languages/frameworks -->
         <div class="flex flex-wrap justify-center gap-10">
@@ -100,13 +94,6 @@ const skills = [
             <img :src="skill.icon" alt="" class="h-14 w-14" />
           </div>
         </div>
-
-        <!-- Right bracket -->
-        <!--        <div class="absolute right-0 top-0 bottom-0 flex flex-col items-end">-->
-        <!--          <div class="w-5 h-[2px] bg-white"></div>-->
-        <!--          <div class="w-[2px] h-full bg-white"></div>-->
-        <!--          <div class="w-5 h-[2px] bg-white"></div>-->
-        <!--        </div>-->
       </div>
     </div>
   </section>
