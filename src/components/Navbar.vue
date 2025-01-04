@@ -14,23 +14,23 @@ defineOptions({
     <ul class="hidden md:flex flex-row gap-5 text-lg items-center">
       <li>
         <RouterLink
-          class="py-2 px-8 hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
+          class="py-2 px-8 flex gap-2 items-center hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
           to="/"
           ><i class="pi pi-home"></i> Home
         </RouterLink>
       </li>
       <li>
         <RouterLink
-          class="py-2 px-8 hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
+          class="py-2 px-8 flex gap-2 items-center hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
           to="/About"
           ><i class="pi pi-user"></i> Profile
         </RouterLink>
       </li>
       <li>
         <RouterLink
-          class="py-2 px-8 hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
+          class="py-2 px-8 flex gap-2 items-center hover:bg-green-600 rounded-3xl transition-all duration-300 ease-in-out hover:scale-110"
           to="/Work"
-          ><i class="pi pi-briefcase"></i> Work
+          ><i class="pi pi-briefcase"></i> Projects
         </RouterLink>
       </li>
     </ul>

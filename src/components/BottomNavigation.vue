@@ -18,7 +18,7 @@ defineOptions({
     </RouterLink>
     <RouterLink to="/Work" class="flex items-center w-full gap-2 mx-auto text-center justify-center RouterLink">
       <i class="pi pi-briefcase text-2xl"></i>
-      <span>Work</span>
+      <span>Projects</span>
     </RouterLink>
   </nav>
 </template>
