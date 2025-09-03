@@ -6,6 +6,7 @@ defineProps({
   link: String,
   githubLink: String,
   subjects: Array,
+  under_dev: Boolean,
 })
 </script>
 
@@ -15,9 +16,23 @@ defineProps({
   >
     <div class="flex flex-col justify-between gap-5 w-full">
       <div>
-        <a v-bind:href="`${link}`" target="_blank" class="font-bold text-3xl text-green-600">{{
-          title
-        }}</a>
+        <div class="flex flex-col-reverse md:flex-row items-center gap-2 ">
+          <a v-bind:href="`${link}`" target="_blank" class="font-bold text-3xl text-green-600">{{
+            title
+          }}</a>
+          <div
+            v-if="under_dev"
+            class="flex gap-1 items-center bg-yellow-400 text-black text-xs font-semibold px-2 py-1 rounded-full ml-2"
+          >
+            <span class="relative flex size-3">
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"
+              ></span>
+              <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
+            </span>
+            <p>Under Development</p>
+          </div>
+        </div>
         <h1 class="font-semibold text-md text-gray-300 max-w-lg">{{ description }}</h1>
         <div class="flex flex-wrap gap-2 my-2 justify-center md:justify-start">
           <div

@@ -23,9 +23,10 @@ const currentPage = ref(1)
 const itemsPerPage = ref(3)
 
 const paginatedProjects = computed(() => {
+  const sortedProjects = [...projects.value].sort((a, b) => b.id_project - a.id_project)
   const start = (currentPage.value - 1) * itemsPerPage.value
   const end = start + itemsPerPage.value
-  return projects.value.slice(start, end)
+  return sortedProjects.slice(start, end)
 })
 
 const totalPages = computed(() => {
@@ -78,6 +79,7 @@ const prevPage = () => {
           :subjects="project.subjects"
           :link="project.link"
           :githubLink="project.githubLink"
+          :under_dev="project.under_dev"
         />
         <p v-if="currentPage === paginatedProjects.length" class="text-center text-sm text-gray-300 mb-10">Stay tuned for more updates!</p>
       </div>
